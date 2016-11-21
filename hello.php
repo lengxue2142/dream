@@ -1,10 +1,10 @@
  <?php
 function myload($class){   
-      $file = './smarty/.'$class.'.class.php';   
+      $file = './smarty/'.$class.'.class.php';   
       if (is_file($file)) {   
            require_once($file);   
        }else{
-       	 exit("$file is not exists");
+       	 exit("$file does not exists");
        }   
 }   
 
